@@ -85,6 +85,11 @@ export default function mainPage() {
 
   return (
     <div>
+        <h2>TEXT TO SPEECH BY MVP Angel Martin vazquez Perez</h2>
+        <input type="text" value={text} onChange={e => setText(e.target.value)} />
+        <button onClick={sentText}>Send Text</button>
+        {data && <p>{data}</p>}
+        <div><strong>Texto Sintetizado:</strong> {text ? text : null}</div>
             {audioUrl && (
         <div style={{ marginTop: "16px" }}>
           <h3>Audio generado</h3>
@@ -98,10 +103,6 @@ export default function mainPage() {
           <audio src={audioProsodiaUrl} controls />
         </div>
       )}
-      <h2>TEXT TO SPEECH BY MVP Angel Martin vazquez Perez</h2>
-      <input type="text" value={text} onChange={e => setText(e.target.value)} />
-      <button onClick={sentText}>Send Text</button>
-      {data && <p>{data}</p>}
 
       {tokens.length > 0 && (
         <div style={{ marginTop: "16px", display: "grid", gap: "10px" }}>

@@ -1,5 +1,6 @@
+import fetch from 'node-fetch';
 
-const API_URL = "https://huggingface.co/spaces/avazquez112/SpeechSynthesis";
+const API_URL = process.env.API_URL;
 
 export const api = {
     get: async (endpoint: string) => {

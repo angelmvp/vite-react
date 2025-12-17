@@ -7,7 +7,6 @@ export default function NavBar() {
 
   return (
     <nav className="bg-green-300 text-white shadow">
-        <p>mami tu, ven paca, de himi chu te voy a comprar</p>
     </nav>
   );
 }
