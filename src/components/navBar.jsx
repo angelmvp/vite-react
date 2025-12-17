@@ -7,6 +7,7 @@ export default function NavBar() {
 
   return (
     <nav className="bg-green-300 text-white shadow">
+      <p>MVP</p>
     </nav>
   );
 }

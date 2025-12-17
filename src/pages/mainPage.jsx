@@ -89,7 +89,7 @@ export default function mainPage() {
         <input type="text" value={text} onChange={e => setText(e.target.value)} />
         <button onClick={sentText}>Send Text</button>
         {data && <p>{data}</p>}
-        <div><strong>Texto Sintetizado:</strong> {text ? text : null}</div>
+        
             {audioUrl && (
         <div style={{ marginTop: "16px" }}>
           <h3>Audio generado</h3>
